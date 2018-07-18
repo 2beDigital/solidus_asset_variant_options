@@ -9,6 +9,10 @@ Spree::Admin::ImagesController.class_eval do
     end
 
     def viewable_ids
-      params[:image][:viewable_ids].reject(&:blank?)
+    	if params[:image][:viewable_ids].present?
+      	params[:image][:viewable_ids].reject(&:blank?)
+      else
+      	params[:image][:viewable_id]
+      end
     end
 end

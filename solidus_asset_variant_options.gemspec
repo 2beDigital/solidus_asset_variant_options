@@ -3,14 +3,14 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = "solidus_asset_variant_options"
-  s.version     = "1.0.2"
+  s.version     = "1.0.3"
   s.summary     = "Allow an image to belong to multiple Spree::Variant models"
   s.description =
     "Spree makes it tedious to upload the same image across" \
     "multiple variants. This gem solves the problem."
   s.required_ruby_version = ">= 2.1"
 
-  s.author       = "Solidus Team"
+  s.author       = "Solidus Team, 2bedigital"
   s.email        = "contact@solidus.io"
 
   s.files       = `git ls-files`.split("\n")
