@@ -6,6 +6,7 @@ Spree::Admin::ImagesController.class_eval do
 
     def set_variants
       @image.variant_ids = viewable_ids
+      @image.position = @product.images.length + 1
     end
 
     def viewable_ids
